@@ -37,7 +37,10 @@
             <!-- List Items  -->
             <ul class="list-group mb-4">
                 <li v-for="(item, i) in itemList" class="fs-6 fw-bold list-group-item d-flex justify-content-between">
-                    <span :class="[markClass(i), 'm-0']" @click="isDone(i)">{{item.text}}</span>
+                    <div class="check-form">
+                        <input type="checkbox" @change="isDone(i)" v-model="item.done">
+                        <span :class="[markClass(i), 'm-0 ms-2']" @click="isDone(i)">{{item.text}}</span>
+                    </div>
                     <i class="bi bi-trash" @click="deleteItem(i)"></i>
                 </li>
             </ul>

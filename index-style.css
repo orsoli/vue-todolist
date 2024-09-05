@@ -3,7 +3,7 @@ body{
     background-color: lightgray;
 }
 
-li>span{
+.check-form>span{
     cursor: pointer;
 }
 
