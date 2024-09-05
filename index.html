@@ -34,13 +34,14 @@
         </header>
         <!-- Main  -->
         <main>
-            <ul>
-                <li v-for="(item, i) in itemList" class="fs-6 fw-bold">
-                    <p>{{item.text}}</p>
+            <ul class="list-group mb-4">
+                <li v-for="(item, i) in itemList" class="fs-6 fw-bold list-group-item d-flex justify-content-between">
+                    <span :class="[markClass(i), 'm-0']">{{item.text}}</span>
+                    <i class="bi bi-trash"></i>
                 </li>
             </ul>
-        </main>
 
+        </main>
     </div>
 
     <!-- Veu Scripts  -->
