@@ -41,11 +41,12 @@
                     <i class="bi bi-trash" @click="deleteItem(i)"></i>
                 </li>
             </ul>
-            <!-- form  -->
+            <!-- Input form  -->
             <div class="form form-control">
                 <h5>Add item in list</h5>
                 <div class=" d-flex gap-4">
-                    <input type="text" class="form-control w-75" id="input-item" v-model="newItem.text">
+                    <input type="text" class="form-control w-75" id="input-item" v-model="newItem"
+                        @keyup.enter="addItem">
                     <button class="btn btn-outline-primary form-control w-25" @click="addItem">+</button>
                 </div>
             </div>

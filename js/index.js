@@ -6,7 +6,7 @@ const app = createApp({
   data() {
     return {
       title: " TODAY To do", // Title of app variables
-      newItem: { text: "", done: true }, // Initial variable for new Item
+      newItem: "", // Initial variable for new Item
       // Create itemList
       itemList: [
         { text: "Prepare breakfast", done: false },
@@ -35,8 +35,12 @@ const app = createApp({
 
     // addItem function used to add new item in list
     addItem() {
-      this.itemList.push(this.newItem); // Add a new item, geting from user, in itemList
-      console.log(this.newItem); // Test printing in console
+      //! validation
+      if (this.newItem.trim()) {
+        this.itemList.push({ text: this.newItem, done: true }); // Add a new item, geting from user, in itemList
+        this.newItem = "";
+        console.log(this.newItem); // Test printing in console
+      }
     },
   },
 }).mount("#app");
