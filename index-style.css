@@ -1,8 +1,16 @@
 /* Generics  */
+body{
+    background-color: lightgray;
+}
+
 li>span{
     cursor: pointer;
 }
 
+/* Utils  */
+#app{
+    background-color: white;
+}
 
 /* Main   */
 .bi-trash{
