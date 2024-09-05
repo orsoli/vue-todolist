@@ -18,12 +18,18 @@ const app = createApp({
 
   // Methods
   methods: {
+    // isDone method to toggle done value
     isDone(i) {
-      this.itemList[i].done = !this.itemList[i].done; // Mark as done 'change the value of done'
+      this.itemList[i].done = !this.itemList[i].done; // Mark as done 'toggle the value of done'
+    },
+    // markClass returne string value to use in class element
+    markClass(i) {
+      return this.itemList[i].done ? "text-decoration-underline" : ""; // The mark class value changed based on boolean
     },
 
-    markClass(i) {
-      return this.itemList[i].done ? "text-decoration-underline" : ""; // The mark class value changed
+    // deleteItems clear the item in event
+    deleteItem(i) {
+      this.itemList.splice(i, 1);
     },
   },
 }).mount("#app");

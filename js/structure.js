@@ -27,3 +27,10 @@ By clicking on the item's text, toggle the done property of the corresponding to
 //? Create an item variable of null (initial value)
 //? Create e function in method component to add an item in list and change the variable done
 //? Use v-for in ul list in HTML to print the result in Page
+
+// Milestone 1
+// Added function in methods
+
+// MIlestone 2
+// Create a function deleteItems using splice() method
+// Call the function linked with element in DOM by directive @click
