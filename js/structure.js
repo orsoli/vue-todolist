@@ -17,7 +17,7 @@ which is then added to the existing to-do list.
 
 Bonus:
 In addition to clicking the button, also capture the ENTER key to add the to-do to the list.
-By clicking on the item's text, toggle the done property of the corresponding to-do (if done was false, set it to true, and vice versa).
+By clicking on the item's text, toggle the done property of the corresponding to-do
 */
 
 //?--- Preparation Phase
@@ -41,3 +41,7 @@ By clicking on the item's text, toggle the done property of the corresponding to
 // Link with js using directives
 // Create addItem function in methods component
 // Link addItem function in button using @click directive
+
+//? BONUS
+// Prepear the Css doing text cursor pointer
+// Use directive @click in DOM text element to call isDone function

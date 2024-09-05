@@ -37,7 +37,7 @@
             <!-- List Items  -->
             <ul class="list-group mb-4">
                 <li v-for="(item, i) in itemList" class="fs-6 fw-bold list-group-item d-flex justify-content-between">
-                    <span :class="[markClass(i), 'm-0']">{{item.text}}</span>
+                    <span :class="[markClass(i), 'm-0']" @click="isDone(i)">{{item.text}}</span>
                     <i class="bi bi-trash" @click="deleteItem(i)"></i>
                 </li>
             </ul>
