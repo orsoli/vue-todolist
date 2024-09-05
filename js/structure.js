@@ -20,17 +20,24 @@ In addition to clicking the button, also capture the ENTER key to add the to-do 
 By clicking on the item's text, toggle the done property of the corresponding to-do (if done was false, set it to true, and vice versa).
 */
 
-//--- Preparation Phase
+//?--- Preparation Phase
 // Prepare the HTML Css structure
 // Prepare js structure using Vue
-//? Create itemList array variable in data method with text: and done: properties
-//? Create an item variable of null (initial value)
-//? Create e function in method component to add an item in list and change the variable done
-//? Use v-for in ul list in HTML to print the result in Page
+// Create itemList array variable in data method with text: and done: properties
+// Create an item variable of null (initial value)
+// Create e function in method component to add an item in list and change the variable done
+// Use v-for in ul list in HTML to print the result in Page
 
-// Milestone 1
+//? Milestone 1
 // Added function in methods
 
-// MIlestone 2
+//? MIlestone 2
 // Create a function deleteItems using splice() method
 // Call the function linked with element in DOM by directive @click
+
+//? MIlestone 3
+// Prepare elements on DOM
+// Create newItem variable in methed componet
+// Link with js using directives
+// Create addItem function in methods component
+// Link addItem function in button using @click directive

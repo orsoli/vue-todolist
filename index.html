@@ -34,13 +34,21 @@
         </header>
         <!-- Main  -->
         <main>
+            <!-- List Items  -->
             <ul class="list-group mb-4">
                 <li v-for="(item, i) in itemList" class="fs-6 fw-bold list-group-item d-flex justify-content-between">
                     <span :class="[markClass(i), 'm-0']">{{item.text}}</span>
                     <i class="bi bi-trash" @click="deleteItem(i)"></i>
                 </li>
             </ul>
-
+            <!-- form  -->
+            <div class="form form-control">
+                <h5>Add item in list</h5>
+                <div class=" d-flex gap-4">
+                    <input type="text" class="form-control w-75" id="input-item" v-model="newItem.text">
+                    <button class="btn btn-outline-primary form-control w-25" @click="addItem">+</button>
+                </div>
+            </div>
         </main>
     </div>
 
