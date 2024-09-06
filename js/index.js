@@ -20,7 +20,7 @@ const app = createApp({
   // Methods
   methods: {
     // isDone method to toggle done value
-    isDone(i) {
+    toggleDone(i) {
       this.itemList[i].done = !this.itemList[i].done; // Mark as done 'toggle the value of done'
     },
     // markClass returne string value to use in class element
